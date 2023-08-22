@@ -1,0 +1,140 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "libgtest_main"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -fprofile-arcs -ftest-coverage -O3 -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/Users/haticenurel/Documents/GitHub/googletest/googletest/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/haticenurel/Downloads/fmt-master/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/haticenurel/cppworkspace/../include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/haticenurel/cppworkspace/."
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "libgtest_main::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wall -fprofile-arcs -ftest-coverage -O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 1,
+				"fragment" : "/usr/local/lib/libgtest.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 1,
+				"fragment" : "/usr/local/lib/libgtest_main.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 1,
+				"fragment" : "/System/Volumes/Data/opt/homebrew/lib/libfmt.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "libgtest_main",
+	"nameOnDisk" : "libgtest_main",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/haticenurel/cppworkspace/build",
+  "command": "/usr/bin/clang++  -I/Users/haticenurel/Documents/GitHub/googletest/googletest/include -I/Users/haticenurel/Downloads/fmt-master/include -I/Users/haticenurel/cppworkspace/../include -I/Users/haticenurel/cppworkspace/.  -Wall -fprofile-arcs -ftest-coverage -O3 -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/main.dir/src/main.cpp.o -c /Users/haticenurel/cppworkspace/src/main.cpp",
+  "file": "/Users/haticenurel/cppworkspace/src/main.cpp",
+  "output": "CMakeFiles/main.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/haticenurel/cppworkspace/build",
+  "command": "/usr/bin/clang++  -I/Users/haticenurel/Documents/GitHub/googletest/googletest/include -I/Users/haticenurel/Downloads/fmt-master/include -I/Users/haticenurel/cppworkspace/../include -I/Users/haticenurel/cppworkspace/.  -Wall -fprofile-arcs -ftest-coverage -O3 -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/libgtest_main.dir/src/main.cpp.o -c /Users/haticenurel/cppworkspace/src/main.cpp",
+  "file": "/Users/haticenurel/cppworkspace/src/main.cpp",
+  "output": "CMakeFiles/libgtest_main.dir/src/main.cpp.o"
+}
+]

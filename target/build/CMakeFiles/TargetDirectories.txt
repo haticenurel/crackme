@@ -1,0 +1,4 @@
+/Users/haticenurel/cppworkspace/build/CMakeFiles/main.dir
+/Users/haticenurel/cppworkspace/build/CMakeFiles/libgtest_main.dir
+/Users/haticenurel/cppworkspace/build/CMakeFiles/edit_cache.dir
+/Users/haticenurel/cppworkspace/build/CMakeFiles/rebuild_cache.dir
