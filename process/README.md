@@ -25,35 +25,34 @@ This guide necessitates the presence of Node.js on your development environment.
 To decrypt the encrypted files using the Node.js code snippet provided above, adhere to the following sequence:
 
 1. Initiate by duplicating the source code and subsequently reorganizing it. In this process, replace the existing key with the string "test", as opposed to the char 'K'.
-![Screenshot 1](../process/img/Ekran Resmi 2023-08-22 15.53.31.png)
+![Screenshot 1](https://github.com/haticenurel/crackme/blob/8473d72d4ea7612d72876d113094ec0e09fef721/process/img/Ekran%20Resmi%202023-08-22%2015.53.31.png)
 
 2. Employ the cutter tool to search for the specific string "test".
-![Screenshot 2](../process/img/Ekran Resmi 2023-08-22 13.29.01.png)
+![Screenshot 2](https://github.com/haticenurel/crackme/blob/8473d72d4ea7612d72876d113094ec0e09fef721/process/img/Ekran%20Resmi%202023-08-22%2013.29.01.png)
 
 3. Proceed to the "parçalara ayırma" section, pinpointing the occurrence of `str.test`:
    ```
    0x100007bc8  .string "test" ; len=5.
    ```
-![Screenshot 3](../process/img/Ekran Resmi 2023-08-22 13.29.09.png)
+![Screenshot 3](https://github.com/haticenurel/crackme/blob/8473d72d4ea7612d72876d113094ec0e09fef721/process/img/Ekran%20Resmi%202023-08-22%2013.29.09.png)
 
 4. Click on the x button, and navigate to the X-ref for `0x100007bc8`.
-![Screenshot 4](..process/img/Ekran Resmi 2023-08-22 13.29.33.png)
+![Screenshot 4](https://github.com/haticenurel/crackme/blob/8473d72d4ea7612d72876d113094ec0e09fef721/process/img/Ekran%20Resmi%202023-08-22%2013.29.33.png)
 
 5. Select `0x100003568` to navigate to its contents:
    ```
    add x1, x1, 0xbc8 ; 0x100007bc8 ; int64_t arg2 in "parçalara ayırma"
    ```
-![Screenshot 5](..process/img/Ekran Resmi 2023-08-22 13.30.58.png)
+![Screenshot 5-6](https://github.com/haticenurel/crackme/blob/8473d72d4ea7612d72876d113094ec0e09fef721/process/img/Ekran%20Resmi%202023-08-22%2013.30.58.png)
 
 6. Proceed to the "%1 kaynak koda dönüştür (entry 0) senkronize edilmemiş" section pertaining to `0x100003568`.
-![Screenshot 6](..process/img/Ekran Resmi 2023-08-22 13.30.58.png)
 
 7. Locate and observe the line:
    ```
    __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B6v15006IDnEEPKc
    ((int64_t)&var_e20h, (int64_t)"test");
    ```
-![Screenshot 7-8](..process/img/Ekran Resmi 2023-08-22 13.31.10.png)
+![Screenshot 7-8](https://github.com/haticenurel/crackme/blob/8473d72d4ea7612d72876d113094ec0e09fef721/process/img/Ekran%20Resmi%202023-08-22%2013.31.10.png)
 
 8. Elicit an understanding of where `var_e20h` is utilized within the decompiled code.
 
@@ -67,7 +66,7 @@ To decrypt the encrypted files using the Node.js code snippet provided above, ad
    __Z17xorEncryptDecryptRNSt3__16vectorIhNS_9allocatorIhEEEERKNS_12basic_stringIcNS_11char_traitsIcEENS1_IcEEEE
    ((int64_t)&var_e90h, (int64_t)&var_e20h);
    ```
-![Screenshot 9](..process/img/Ekran Resmi 2023-08-22 13.31.58.png)
+![Screenshot 9](https://github.com/haticenurel/crackme/blob/8473d72d4ea7612d72876d113094ec0e09fef721/process/img/Ekran%20Resmi%202023-08-22%2013.31.58.png)
 
 10. Utilize the x button to direct your focus towards `__Z17xorEncryptDecryptRNSt3__16vectorIhNS_9allocatorIhEEEERKNS_12basic_stringIcNS_11char_traitsIcEENS1_IcEEEE`.
 
