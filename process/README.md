@@ -117,4 +117,3 @@ To decrypt the encrypted files using the Node.js code snippet provided above, ad
 
 20. Finally, ascertain the char key 'K' by leveraging `var_e09h`.
 ![Screenshot 20](https://github.com/haticenurel/crackme/blob/main/process/img/Ekran%20Resmi%202023-08-22%2011.53.31.png)
-(Note: For a visual reference, screenshots corresponding to each step can be effectively incorporated.)
